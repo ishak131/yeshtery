@@ -1,0 +1,76 @@
+.yeshtery-header {
+  //   & > div {
+  //     padding: 0 19.5vw;
+  //   }
+
+  .yellow-header {
+    font-size: 14px;
+    height: 48px;
+    background-color: var(--primary-color);
+    box-shadow: 0px 0.73px 2px #00000080;
+
+    .content {
+      max-width: 1168px;
+      display: flex;
+      align-items: center;
+      margin: auto;
+      justify-content: space-between;
+      height: 100%;
+      
+      & > div {
+        display: flex;
+        align-items: center;
+        height: fit-content;
+      }
+
+      .icons-wrapper {
+        gap: 32px;
+      }
+
+      .link-with-icon {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: #000000;
+        font-weight: 500;
+        letter-spacing: 0px;
+      }
+
+      .offers-slider {
+        margin-left: 53px;
+        width: 439px;
+        button {
+          img {
+            height: 12px;
+          }
+        }
+        .offers-wrapper {
+          scroll-behavior: smooth;
+          width: 439.7px;
+          overflow: hidden;
+          display: flex;
+
+          .single-offer {
+            a {
+              width: 423px;
+              white-space: nowrap;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              justify-content: center;
+              text-decoration: none;
+              color: #000000;
+              strong {
+                text-decoration: underline;
+              }
+              p {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
