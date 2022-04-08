@@ -163,7 +163,12 @@ class SingleProduct extends Component {
                                 </div>
                             </div>
                             <div className='actions'>
-                                <button id='add-to-cart-button'>Add To Cart</button>
+                                <button onClick={() => this.props.handleAddProductToCart({
+                                    quantity,
+                                    productImage: thumbnails[0],
+                                    caption: productDescription,
+                                    price,
+                                })} id='add-to-cart-button'>Add To Cart</button>
                                 <button>Pickup From Store</button>
                             </div>
                         </section>

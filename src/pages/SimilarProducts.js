@@ -1,15 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { getSimilarProducts } from '../services/similar-products';
 
 
 import './similar-product.scss'
 
 
-const ProductCard = ({ thumbnail, caption, brandImage, price, oldPrice, offer, rate, pickedFrom, pickedTo, duration }) => {
+const ProductCard = ({ id = '123d3d1de2f13f4fqef14fwef', thumbnail, caption, brandImage, price, oldPrice, offer, rate, pickedFrom, pickedTo, duration }) => {
     const filledStar = process.env.PUBLIC_URL + "/images/single-product/filled-rating-star.png"
     const emptyStar = process.env.PUBLIC_URL + "/images/single-product/rating-star.png"
 
-    return <div className='product-card'>
+    return <Link to={'/single-product/product-id'} className='product-card'>
         <div className='product-thumbnail' style={{ background: `url("${thumbnail}") center no-repeat` }}>
             <button>
                 <img alt='360 view' src={process.env.PUBLIC_URL + '/images/single-product/view_360.svg'} />
@@ -45,7 +46,7 @@ const ProductCard = ({ thumbnail, caption, brandImage, price, oldPrice, offer, r
                 }
             </div>
         </div>
-    </div>
+    </Link>
 }
 
 

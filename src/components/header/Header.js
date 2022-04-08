@@ -5,11 +5,11 @@ import './header.scss';
 import { Link } from 'react-router-dom';
 import getProductCategorization from '../../services/fullCategorization';
 
-const Header = () => {
+const Header = ({ cartItemsCount }) => {
     return (
         <header className='yeshtery-header'>
             <YellowHeader />
-            <SearchHeader />
+            <SearchHeader cartItemsCount={cartItemsCount} />
             <div className='sex-categorization-links' >
                 <div className='content'>
                     <Link to="/Men" >Men</Link>
