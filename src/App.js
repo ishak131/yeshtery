@@ -1,12 +1,15 @@
-import { Component } from 'react';
+import { Component, lazy, Suspense } from 'react';
 import { BrowserRouter, Link, Navigate, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import Footer from './components/footer/Footer';
-
 import Header from "./components/header/Header";
+// import SingleProduct from './pages/SingleProduct';
 import MyCart from './components/my-cart/MyCart';
-import SingleProduct from './pages/SingleProduct';
+
 import { getCartInfo } from './services/cart';
+
+
+const SingleProduct = lazy(() => import('./pages/SingleProduct'));
 
 class App extends Component {
   constructor() {
@@ -59,19 +62,21 @@ class App extends Component {
         <BrowserRouter>
           <MyCart handleRemoveProductFromCart={this.handleRemoveProductFromCart} total={total} cartItems={cartItems} />
           <Header cartItemsCount={cartItems.length} />
-          <Routes>
-            <Route exact path='/home' element={<main>
-              <h1>Home</h1>
-              <h1>
-                <Link to="/single-product/:id">single-Product</Link>
-              </h1>
-            </main>} />
-            <Route path='/single-product/:id' element={<SingleProduct handleAddProductToCart={this.handleAddProductToCart} />} />
-            <Route
-              path="*"
-              element={<Navigate to="/single-product/abcdefg1234567890" />}
-            />
-          </Routes>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Routes>
+              <Route exact path='/home' element={<main>
+                <h1>Home</h1>
+                <h1>
+                  <Link to="/single-product/:id">single-Product</Link>
+                </h1>
+              </main>} />
+              <Route path='/single-product/:id' element={<SingleProduct handleAddProductToCart={this.handleAddProductToCart} />} />
+              <Route
+                path="*"
+                element={<Navigate to="/single-product/abcdefg1234567890" />}
+              />
+            </Routes>
+          </Suspense>
           <Footer />
         </BrowserRouter>
       </div>
