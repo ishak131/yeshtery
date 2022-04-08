@@ -1,19 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { getHeaderOffers } from '../../../services/offers'
+import LinkWithIcon from '../LinkWithIcon';
+import './yellow-header.scss'
 
-const LinkWithIcon = ({ linkPath, imageSource, text }) =>
-    <Link className='link-with-icon' to={linkPath}>
-        <img alt={text} src={imageSource} />
-        {text}
-    </Link>
 
-const SingleOffer = ({ offerLink = "#", offerText = "Valentine’s Day Offers! Buy Two Get One Free " }) => <div className='single-offer'>
-    <Link to={offerLink} target="_blank">
+const SingleOffer = ({ offerLink, offerText }) => <div className='single-offer'>
+    <Link to={offerLink} >
         <p>{offerText}</p>
         {" "}
         <strong> Shop Now</strong>
     </Link>
 </div>
+
 
 const YellowHeader = () => {
 
@@ -24,7 +23,6 @@ const YellowHeader = () => {
     const scrollToRightOffer = () => {
         document.getElementById("over").scrollLeft -= 423
     }
-
 
     return (
         <div className='yellow-header'>
@@ -38,11 +36,7 @@ const YellowHeader = () => {
                         <img alt='left arrow' src={process.env.PUBLIC_URL + "/images/header/left-arrow.png"} />
                     </button>
                     <div id='over' className='offers-wrapper'>
-                        <SingleOffer />
-                        <SingleOffer />
-                        <SingleOffer />
-                        <SingleOffer />
-                        <SingleOffer />
+                        {getHeaderOffers().map((offer, index) => <SingleOffer key={index} {...offer} />)}
                     </div>
                     <button onClick={scrollToLeftOffer} className='transparent-button'>
                         <img alt='right arrow' src={process.env.PUBLIC_URL + "/images/header/right-arrow.png"} />

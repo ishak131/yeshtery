@@ -1,0 +1,140 @@
+.yeshtrey-footer {
+  margin-top: 65px;
+  background-color: #3c3c3b;
+  height: 495.38px;
+  box-sizing: border-box;
+  padding: 50px 0 22px;
+  .about-and-contact-info {
+    align-items: unset;
+    height: 349px;
+
+    .yeshtrey-info {
+      max-width: 493px;
+      .about-yeshtery {
+        letter-spacing: -0.4px;
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 16px;
+        margin-top: 29px;
+        margin-bottom: 20px;
+      }
+    }
+    & > hr {
+      height: calc(100% - 22px);
+    }
+    .subscribe-routes-and-social-links {
+      max-width: 576px;
+      flex-grow: 1;
+      .subscribe {
+        h3 {
+          font-size: 18px;
+          font-weight: 400;
+          margin-top: 0;
+          color: #fff;
+        }
+        .subscribe-form {
+          width: 100%;
+          background-color: white;
+          border-radius: 24px;
+          height: 48px;
+          padding: 5px;
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+
+          input {
+            letter-spacing: -0.3px;
+            color: var(--secondary-color);
+            font-size: 12px;
+            flex-grow: 1;
+            margin-left: 10px;
+            font-weight: 500;
+            &::placeholder {
+              color: var(--secondary-color);
+            }
+          }
+
+          button {
+            width: 120px;
+            height: 38px;
+            border-radius: 24px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 8px;
+            background-color: var(--primary-color);
+            letter-spacing: -0.25px;
+            font-size: 10px;
+            font-weight: 500;
+            padding: 8.5px 16.5px;
+          }
+        }
+      }
+      .routes-and-social-links {
+        display: flex;
+        margin-top: 29px;
+        a {
+          font-size: 16px;
+          color: #fff;
+          font-weight: 400;
+        }
+        hr {
+          height: 216px;
+        }
+        .routes {
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+          letter-spacing: -0.4px;
+        }
+
+        .social-links {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-right: 55px;
+          margin-left: -105px;
+          a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+  & > hr {
+    border: none;
+    border-bottom: 0.25px solid #868686;
+    max-width: 1200px;
+  }
+  .rights-and-payments {
+    height: 78px;
+    color: #fff;
+    small:first-child {
+      font-size: 16px;
+      font-weight: 400;
+    }
+    div {
+      * {
+        margin-left: 9.5px;
+      }
+    }
+    small:last-child {
+      font-size: 14px;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+    }
+  }
+  hr {
+    opacity: 0.3;
+  }
+  .vertical-line {
+    height: 100%;
+    width: 0;
+    border: none;
+    border-left: 0.25px solid #868686;
+  }
+}

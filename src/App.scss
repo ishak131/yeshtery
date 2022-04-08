@@ -5,10 +5,31 @@
 :root {
   --primary-color: #fff100;
   --secondary-color: #542e90;
+  
 }
-
+a {
+  text-decoration: none;
+  color: unset;
+}
 .transparent-button {
   background-color: unset;
   border: unset;
   padding: 0;
+}
+
+main {
+  min-height: calc(100vh - 255px);
+  margin-top: 255px;
+  padding-top: 50px;
+}
+
+input {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  border: unset;
 }

@@ -1,0 +1,49 @@
+.yellow-header {
+  font-size: 14px;
+  height: 48px;
+  background-color: var(--primary-color);
+  box-shadow: 0px 0.73px 2px #00000080;
+  .content {
+    & > div {
+      display: flex;
+      align-items: center;
+      height: fit-content;
+    }
+
+    .icons-wrapper {
+      gap: 32px;
+    }
+
+    .offers-slider {
+      margin-left: 53px;
+      width: 439px;
+      button {
+        img {
+          height: 12px;
+        }
+      }
+      .offers-wrapper {
+        scroll-behavior: smooth;
+        width: 439.7px;
+        overflow: hidden;
+        display: flex;
+
+        .single-offer {
+          a {
+            width: 423px;
+            white-space: nowrap;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            justify-content: center;
+            color: #000000;
+            strong {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

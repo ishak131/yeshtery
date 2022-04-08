@@ -1,0 +1,151 @@
+.similar-products {
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  margin-top: 65px;
+  & > h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+    font-size: 28px;
+    font-weight: 600;
+  }
+  & > p {
+    margin-top: 0;
+    margin-bottom: 26px;
+    font-size: 22px;
+    color: #575756;
+    font-weight: 400;
+  }
+  & > div {
+    display: flex;
+    overflow: auto;
+    max-width: 1168px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 29px;
+    height: 490px;
+    //
+    &::-webkit-scrollbar {
+      height: 3px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background-color: #d9d9d9;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: var(--secondary-color);
+    }
+
+    //
+    .product-card {
+      padding: 8px 7px;
+      border: 0.7551665306091309px solid #ececec;
+      border-radius: 5px;
+
+      .product-thumbnail {
+        height: 254px;
+        width: 254px;
+        border-radius: 5px;
+        button {
+          position: relative;
+          width: 40px;
+          height: 40px;
+          padding: 5px 6.17px;
+          border-radius: 7px;
+          inset: 7px;
+          img {
+            height: 30px;
+          }
+        }
+      }
+      .product-info {
+        padding: 10px 9px;
+        .product-caption {
+          margin-top: unset;
+          margin-bottom: 15px;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        .price-and-discount {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .price {
+            color: var(--secondary-color);
+            font-size: 20px;
+            font-weight: 600;
+            padding-bottom: 8px;
+
+            small {
+              font-size: 14px;
+            }
+          }
+          .discount {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            .old-price {
+              color: #a7a9ac;
+              text-decoration: line-through;
+              font-size: 14px;
+            }
+            .offer {
+              height: 15px;
+              width: 52px;
+              background-color: var(--primary-color);
+              font-size: 10px;
+              font-weight: 600;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 3px;
+            }
+          }
+          img {
+            height: 37px;
+          }
+        }
+        .rate {
+          display: flex;
+          align-items: center;
+          gap: 8.4px;
+          justify-content: center;
+          margin-top: 16px;
+          .product-rate-in-stars {
+            img {
+              height: 16px;
+              margin-right: 4.4px;
+            }
+          }
+          .rate-out-of-five {
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+      }
+      .place-time-info {
+        margin-top: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        div {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+        }
+        span {
+          font-size: 10px;
+          font-weight: 500;
+          strong {
+            font-size: 12px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
