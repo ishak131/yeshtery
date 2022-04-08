@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/yeshtery/home/static/css/main.711898f0.css",
-    "main.js": "/yeshtery/home/static/js/main.8cd7f1e8.js",
-    "static/js/787.176c7ea9.chunk.js": "/yeshtery/home/static/js/787.176c7ea9.chunk.js",
-    "static/media/similar-products.png": "/yeshtery/home/static/media/similar-products.e6023fc05faf3c7c1931.png",
-    "static/media/single-product (3).png": "/yeshtery/home/static/media/single-product (3).e354c594db9e6ed01c55.png",
-    "static/media/single-product (2).png": "/yeshtery/home/static/media/single-product (2).522cad545be1d70b3941.png",
-    "static/media/single-product (4).png": "/yeshtery/home/static/media/single-product (4).abc087e0e6efa28b253a.png",
-    "static/media/single-product (1).png": "/yeshtery/home/static/media/single-product (1).4dcf49a9bdc4d15b4edd.png",
-    "static/media/cart-thumbnail.png": "/yeshtery/home/static/media/cart-thumbnail.cc2685535d4df5880e68.png",
-    "static/media/brand.svg": "/yeshtery/home/static/media/brand.acfd06476a2550f18f8455cd7d50ca1a.svg",
-    "index.html": "/yeshtery/home/index.html",
-    "main.711898f0.css.map": "/yeshtery/home/static/css/main.711898f0.css.map",
-    "main.8cd7f1e8.js.map": "/yeshtery/home/static/js/main.8cd7f1e8.js.map",
-    "787.176c7ea9.chunk.js.map": "/yeshtery/home/static/js/787.176c7ea9.chunk.js.map"
+    "main.css": "/yeshtery/static/css/main.711898f0.css",
+    "main.js": "/yeshtery/static/js/main.6caa1afa.js",
+    "static/js/787.176c7ea9.chunk.js": "/yeshtery/static/js/787.176c7ea9.chunk.js",
+    "static/media/similar-products.png": "/yeshtery/static/media/similar-products.e6023fc05faf3c7c1931.png",
+    "static/media/single-product (3).png": "/yeshtery/static/media/single-product (3).e354c594db9e6ed01c55.png",
+    "static/media/single-product (2).png": "/yeshtery/static/media/single-product (2).522cad545be1d70b3941.png",
+    "static/media/single-product (4).png": "/yeshtery/static/media/single-product (4).abc087e0e6efa28b253a.png",
+    "static/media/single-product (1).png": "/yeshtery/static/media/single-product (1).4dcf49a9bdc4d15b4edd.png",
+    "static/media/cart-thumbnail.png": "/yeshtery/static/media/cart-thumbnail.cc2685535d4df5880e68.png",
+    "static/media/brand.svg": "/yeshtery/static/media/brand.acfd06476a2550f18f8455cd7d50ca1a.svg",
+    "index.html": "/yeshtery/index.html",
+    "main.711898f0.css.map": "/yeshtery/static/css/main.711898f0.css.map",
+    "main.6caa1afa.js.map": "/yeshtery/static/js/main.6caa1afa.js.map",
+    "787.176c7ea9.chunk.js.map": "/yeshtery/static/js/787.176c7ea9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.711898f0.css",
-    "static/js/main.8cd7f1e8.js"
+    "static/js/main.6caa1afa.js"
   ]
 }
